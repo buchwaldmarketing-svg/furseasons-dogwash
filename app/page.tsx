@@ -147,38 +147,19 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Visual side — real photos stacked */}
-              <div className="relative shrink-0 flex gap-4 items-end">
-                {/* Storefront photo — taller */}
-                <div className="relative w-44 sm:w-52 h-64 sm:h-72 rounded-3xl overflow-hidden"
-                  style={{ boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
+              {/* Visual side — logo */}
+              <div className="relative shrink-0 flex items-center justify-center">
+                <div className="float-slow relative w-72 h-72 sm:w-80 sm:h-80">
                   <Image
-                    src="/storefront.png"
-                    alt="Fur Seasons Dog Wash storefront"
+                    src="/logo.png"
+                    alt="Fur Seasons Dog Wash"
                     fill
-                    className="object-cover"
+                    className="object-contain drop-shadow-2xl"
                     priority
                   />
-                  {/* Gold overlay strip at bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 px-4 py-3"
-                    style={{ background: "linear-gradient(to top, rgba(11,31,58,0.85), transparent)" }}>
-                    <p className="text-white text-xs font-bold">Cedar Hill, TX</p>
-                  </div>
                 </div>
-
-                {/* Interior photo — shorter, offset up */}
-                <div className="relative w-36 sm:w-44 h-52 sm:h-60 rounded-3xl overflow-hidden mb-6"
-                  style={{ boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
-                  <Image
-                    src="/interior.png"
-                    alt="Happy clients at Fur Seasons Dog Wash"
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
-
                 {/* Floating chip — price */}
-                <div className="float-slow absolute -bottom-2 -left-5 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl text-sm font-bold text-white"
+                <div className="float-delay absolute -bottom-4 -left-4 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl text-sm font-bold text-white"
                   style={{ background: "linear-gradient(135deg, #C9A550, #B8913E)", boxShadow: "0 8px 24px rgba(201,165,80,0.5)" }}>
                   <span className="text-white/80 text-xs font-semibold">DIY from</span>
                   <span className="text-xl font-extrabold" style={{ fontFamily: "var(--font-jakarta), sans-serif" }}>$15</span>

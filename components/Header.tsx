@@ -40,26 +40,21 @@ export function Header() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-18 py-3">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 cursor-pointer">
+            <Link href="/" className="flex items-center gap-2 cursor-pointer">
               <Image
                 src="/logo.png"
                 alt="Fur Seasons Dog Wash"
-                width={48}
-                height={48}
-                className="rounded-xl"
+                width={52}
+                height={52}
+                className="object-contain"
                 priority
               />
-              <div className="flex flex-col leading-tight">
-                <span
-                  className="text-xl font-extrabold text-[#0B1F3A] tracking-tight"
-                  style={{ fontFamily: "var(--font-jakarta), sans-serif" }}
-                >
-                  Fur Seasons
-                </span>
-                <span className="text-[10px] font-bold text-[#C9A550] uppercase tracking-[0.18em]">
-                  Dog Wash
-                </span>
-              </div>
+              <span
+                className="text-xl font-extrabold text-[#0B1F3A] tracking-tight hidden sm:block"
+                style={{ fontFamily: "var(--font-jakarta), sans-serif" }}
+              >
+                Fur Seasons <span className="text-[#C9A550]">Dog Wash</span>
+              </span>
             </Link>
 
             {/* Desktop nav */}

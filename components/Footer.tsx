@@ -53,19 +53,14 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <Image src="/logo.png" alt="Fur Seasons Dog Wash" width={44} height={44} className="rounded-xl" />
-              <div className="flex flex-col leading-tight">
-                <span
-                  className="text-lg font-extrabold tracking-tight"
-                  style={{ fontFamily: "var(--font-jakarta), sans-serif" }}
-                >
-                  Fur Seasons
-                </span>
-                <span className="text-[10px] font-bold text-[#C9A550] uppercase tracking-[0.18em]">
-                  Dog Wash
-                </span>
-              </div>
+            <div className="flex items-center gap-2 mb-5">
+              <Image src="/logo.png" alt="Fur Seasons Dog Wash" width={56} height={56} className="object-contain" />
+              <span
+                className="text-lg font-extrabold tracking-tight"
+                style={{ fontFamily: "var(--font-jakarta), sans-serif" }}
+              >
+                Fur Seasons <span className="text-[#C9A550]">Dog Wash</span>
+              </span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed max-w-xs">
               Cedar Hill&apos;s premier dog wash. Clean space, simple pricing, luxury feel.
